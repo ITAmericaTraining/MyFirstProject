@@ -11,6 +11,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
 import pageObject.*;
+import utilities.Constant;
+import utilities.ExcelUtils;
+
 
 public class SmokeTest {
 	
@@ -24,8 +27,10 @@ public class SmokeTest {
 	  @Before
 	  public void setUp() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "C://Users/rajes/Downloads/chromedriver_win32/chromedriver.exe");
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Sheet1");
+		 
 	    driver = new ChromeDriver();
-	    baseUrl = "https://www.google.com/";
+	    baseUrl = "https://www.servsafe.com/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  }
 
@@ -41,6 +46,7 @@ public class SmokeTest {
 	    
 	    
 	 }
+	  @Test
 	  public void MySecodTest()  throws Exception {
 		  ServSafeHomePageLogin testLoginFeature = new ServSafeHomePageLogin(driver);
 		  testLoginFeature= testLoginFeature.LaunchTheWebSite();
@@ -49,17 +55,45 @@ public class SmokeTest {
 		  testLoginFeature= testLoginFeature.VerfiyUserIsLoggedIn();
 			
 	  }
+	  @Test
+	  public void ErroredTest() throws Exception {
+		  
+		  driver.get("https://www.google.com");
+		    driver.manage().window().maximize();
+		    assertEquals("Google", driver.getTitle());
+		    driver.findElement(By.cssSelector("a.gb_b.gb_cc")).click();
+		    driver.findElement(By.cssSelector("#gb36 > span.gb_2")).click();
+		    assertEquals("YouTube", driver.getTitle());
+		    driver.findElement(By.id("text")).click();
+		    assertEquals("YouTube", driver.getTitle());
+		    /*driver.findElement(By.name("hiddenPassword")).clear();
+		    driver.findElement(By.name("hiddenPassword")).sendKeys("password");
+		    driver.findElement(By.id("identifierId")).clear();*/
+		    driver.findElement(By.id("identifierId")).sendKeys("poojabom40@gmail.com");
+		    driver.findElement(By.xpath("//div[@aria-haspopup='true']")).click();
+		    /*driver.switchTo().frame(driver.findElement(By.name("iFrameTitle")));
+		    assertEquals("Create your Google Account", driver.getTitle());*/
+		 
+		  }
+		  
+		  
+		  
+	  
 
 	  @After
 	  public void tearDown() throws Exception {
-	    driver.quit();
+	    //driver.quit();
+		  driver.close();
+		  
 	    String verificationErrorString = verificationErrors.toString();
 	    if (!"".equals(verificationErrorString)) {
 	      fail(verificationErrorString);
 	    }
 	  }
 
-	  private boolean isElementPresent(By by) {
+	  
+	  
+	 /* private boolean isElementPresent(By by) {
 	    try {
 	      driver.findElement(by);
 	      return true;
@@ -88,11 +122,14 @@ public class SmokeTest {
 	      }
 	      return alertText;
 	    } finally {
-	      acceptNextAlert = true;
-	    }
-	  }
+	      acceptNextAlert = true;*/
+	    
+	  
 	}
 
+
+	
+	
 	
 	
 	

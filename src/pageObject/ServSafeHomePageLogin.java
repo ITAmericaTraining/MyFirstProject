@@ -1,4 +1,5 @@
 package pageObject;
+import utilities.*;
 
 import org.openqa.selenium.*;
 import elementLocators.*;
@@ -15,11 +16,17 @@ public class ServSafeHomePageLogin extends BaseClass{
 		super(driver);
 	}
 	
-	public ServSafeHomePageLogin ProvideExistingUserInfo() {
+	public ServSafeHomePageLogin ProvideExistingUserInfo() throws Exception {
 		
+		String ExcelDataUserName = ExcelUtils.getCellData(1, 0);
+		 
+		String ExcelDataPassword = ExcelUtils.getCellData(1, 2);
+
 		 
 		  driver.findElement(ServSafeHomePageLocator.ClickOnTheLoginLink).click();
-		  driver.findElement(ServSafeHomePageLocator.TypeUserName).sendKeys(ServSafeTestData.CorrectUserName);
+		 //driver.findElement(ServSafeHomePageLocator.TypeUserName).sendKeys(ServSafeTestData.CorrectUserName);
+		  
+		  driver.findElement(ServSafeHomePageLocator.TypeUserName).sendKeys(ExcelDataUserName);
 		  
 		 
 		  driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("password");
