@@ -32,6 +32,11 @@ public class MyRegressionTest {
 		    baseUrl = "https://www.servsafe.com/";
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  }
+		  @Test
+		  public void testSecondTest() throws Exception{
+			  
+			  driver.get("https://www.google.com");
+		  }
 
 		  @Test
 		  public void MyFirstTest() throws Exception {
