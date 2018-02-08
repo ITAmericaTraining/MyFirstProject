@@ -19,12 +19,15 @@ public class MyRegressionTest {
 		// my name is ben.
 
 	// testing this code.
+<<<<<<< HEAD
 //<<<<<<< HEAD
 
 //=======
 //hello 
 //=======
 //>>>>>>> 81844a52ca92dc62a421a0b2323ae5f0bed88b0f
+=======
+>>>>>>> 4d83d076f5d734d3128918c5cda1b50d35531887
 	//I am enjoying the github session.
 
 	// editing and uodating the stuffs//
@@ -71,7 +74,21 @@ public class MyRegressionTest {
 			  
 			  testLoginFeature= testLoginFeature.ProvideExistingUserInfo();
 			  testLoginFeature= testLoginFeature.VerfiyUserIsLoggedIn();
+		  }
+		  @Test
+		  public void MythirdTest()  throws Exception {
+			  ServSafeHomePageLogin testLoginFeature = new ServSafeHomePageLogin(driver);
+			  testLoginFeature= testLoginFeature.LaunchTheWebSite();
+			  
+			  testLoginFeature= testLoginFeature.ProvideExistingUserInfo();
+			  testLoginFeature= testLoginFeature.VerfiyUserIsLoggedIn();
+		  }
 				
+		  }
+		  
+		  @Test
+		  public void TestForHimaBranch() throws Exception {
+			  // nothing goes here
 		  }
 
 		  @After
@@ -82,12 +99,4 @@ public class MyRegressionTest {
 		      fail(verificationErrorString);
 		    }
 		  }
-		
-		
-		
-		
-		
-
-
-
 }
