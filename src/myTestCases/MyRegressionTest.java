@@ -17,13 +17,15 @@ import utilities.ExcelUtils;
 public class MyRegressionTest {
 		
 		// my name is ben.
-<<<<<<< HEAD
+
 	// testing this code.
-//hello 
-=======
 	//I am enjoying the github session.
->>>>>>> 24e6630039ea0f0b34c3573e226782caaa624726
-		
+
+	// editing and uodating the stuffs//
+	
+	
+	//mama mia loving it.
+
 		  private WebDriver driver;
 		  private String baseUrl;
 		  private boolean acceptNextAlert = true;
@@ -83,12 +85,4 @@ public class MyRegressionTest {
 		      fail(verificationErrorString);
 		    }
 		  }
-		
-		
-		
-		
-		
-
-
-
 }
