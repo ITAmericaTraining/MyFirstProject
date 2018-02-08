@@ -63,6 +63,15 @@ public class MyRegressionTest {
 			  
 			  testLoginFeature= testLoginFeature.ProvideExistingUserInfo();
 			  testLoginFeature= testLoginFeature.VerfiyUserIsLoggedIn();
+		  }
+		  @Test
+		  public void MythirdTest()  throws Exception {
+			  ServSafeHomePageLogin testLoginFeature = new ServSafeHomePageLogin(driver);
+			  testLoginFeature= testLoginFeature.LaunchTheWebSite();
+			  
+			  testLoginFeature= testLoginFeature.ProvideExistingUserInfo();
+			  testLoginFeature= testLoginFeature.VerfiyUserIsLoggedIn();
+		  }
 				
 		  }
 
