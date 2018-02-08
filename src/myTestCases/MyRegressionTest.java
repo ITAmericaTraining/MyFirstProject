@@ -67,6 +67,11 @@ public class MyRegressionTest {
 			  testLoginFeature= testLoginFeature.VerfiyUserIsLoggedIn();
 				
 		  }
+		  
+		  @Test
+		  public void TestForHimaBranch() throws Exception {
+			  // nothing goes here
+		  }
 
 		  @After
 		  public void tearDown() throws Exception {
