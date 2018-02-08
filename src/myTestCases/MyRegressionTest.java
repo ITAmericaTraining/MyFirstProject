@@ -19,7 +19,12 @@ public class MyRegressionTest {
 		// my name is ben.
 
 	// testing this code.
+<<<<<<< HEAD
 
+=======
+//hello 
+=======
+>>>>>>> 81844a52ca92dc62a421a0b2323ae5f0bed88b0f
 	//I am enjoying the github session.
 
 	// editing and uodating the stuffs//
