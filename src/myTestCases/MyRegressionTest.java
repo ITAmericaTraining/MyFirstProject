@@ -17,11 +17,10 @@ import utilities.ExcelUtils;
 public class MyRegressionTest {
 		
 		// my name is ben.
-<<<<<<< HEAD
 	// testing this code.
 =======
 	//I am enjoying the github session.
->>>>>>> 24e6630039ea0f0b34c3573e226782caaa624726
+//>>>>>>> 24e6630039ea0f0b34c3573e226782caaa624726
 		
 		  private WebDriver driver;
 		  private String baseUrl;
