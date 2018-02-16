@@ -89,6 +89,7 @@ public class Verify_Links {
 		      return false;
 		    }
 		  }
+	  //testing the comparision..
 
 		  private String closeAlertAndGetItsText() {
 		    try {
