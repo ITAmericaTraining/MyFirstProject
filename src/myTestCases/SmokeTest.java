@@ -24,6 +24,7 @@ public class SmokeTest {
 	  private boolean acceptNextAlert = true;
 	  private StringBuffer verificationErrors = new StringBuffer();
 
+	  
 	  @Before
 	  public void setUp() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "C://Users/rajes/Downloads/chromedriver_win32/chromedriver.exe");
