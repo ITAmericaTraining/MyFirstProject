@@ -45,6 +45,8 @@ public class FindMortgageRate {
 		  driver.findElement(By.xpath("//button[@data-value='average']")).click();
 		  driver.findElement(By.xpath("//button[contains(.,'No')]")).click();
 		  driver.findElement(By.xpath("//h1[contains(.,'Here are your personalized results')]"));
+		  
+		  // hima hia hia//
 		  }
 	 
 		 
