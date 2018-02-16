@@ -17,11 +17,32 @@ import utilities.ExcelUtils;
 public class MyRegressionTest {
 		
 		// my name is ben.
-	// testing this code.
+<<<<<<< HEAD
 =======
+
+>>>>>>> d9edfb248b2ca5416e821b03f1d929249c2ad614
+	// testing this code.
+<<<<<<< HEAD
+//<<<<<<< HEAD
+
+//=======
+//hello 
+//=======
+//>>>>>>> 81844a52ca92dc62a421a0b2323ae5f0bed88b0f
+=======
+>>>>>>> 4d83d076f5d734d3128918c5cda1b50d35531887
 	//I am enjoying the github session.
+<<<<<<< HEAD
 //>>>>>>> 24e6630039ea0f0b34c3573e226782caaa624726
 		
+=======
+
+	// editing and uodating the stuffs//
+	
+	
+	//mama mia loving it.
+
+>>>>>>> d9edfb248b2ca5416e821b03f1d929249c2ad614
 		  private WebDriver driver;
 		  private String baseUrl;
 		  private boolean acceptNextAlert = true;
@@ -51,6 +72,7 @@ public class MyRegressionTest {
 		  testLoginFeature= testLoginFeature.ProvideExistingUserInfo();
 		  testLoginFeature= testLoginFeature.VerfiyUserIsLoggedIn();
 			
+		 
 		    
 		    
 		 }
@@ -61,7 +83,21 @@ public class MyRegressionTest {
 			  
 			  testLoginFeature= testLoginFeature.ProvideExistingUserInfo();
 			  testLoginFeature= testLoginFeature.VerfiyUserIsLoggedIn();
+		  }
+		  @Test
+		  public void MythirdTest()  throws Exception {
+			  ServSafeHomePageLogin testLoginFeature = new ServSafeHomePageLogin(driver);
+			  testLoginFeature= testLoginFeature.LaunchTheWebSite();
+			  
+			  testLoginFeature= testLoginFeature.ProvideExistingUserInfo();
+			  testLoginFeature= testLoginFeature.VerfiyUserIsLoggedIn();
+		  }
 				
+		  }
+		  
+		  @Test
+		  public void TestForHimaBranch() throws Exception {
+			  // nothing goes here
 		  }
 
 		  @After
@@ -72,12 +108,4 @@ public class MyRegressionTest {
 		      fail(verificationErrorString);
 		    }
 		  }
-		
-		
-		
-		
-		
-
-
-
 }
